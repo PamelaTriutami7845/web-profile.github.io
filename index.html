@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3d2ade942.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <script src="typed.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="./parallax.min.js"></script>
+      <link rel="stylesheet" href="./lightbox.min.css">
+      <script src="./lightbox-plus-jquery.min.js"></script>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+      <script src="./jquery.counterup.min.js"></script>
+      <script src="./jquery.waypoints.min.js"></script>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+    <script>
+       window.addEventListener("scroll", function(){
+           var header = document.querySelector("header");
+           header.classList.toggle("active", window.scrollY > 0);
+       })
+    </script>
+        <script>
+        $(document).ready(function(){
+        
+        $(".menu").click(function(){
+          $(".Navbar").slideToggle("active");
+        })
+      }) 
+        </script>
+    <style>
+        nav .active{
+
+            background-color: rgb(59, 59, 82);
+            box-shadow: 2px white;
+            z-index: 999;
+            transition: .1s ease-in-out;
+        }
+    </style>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    
+        <!-- Popper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body class="overflow-x-hidden bg-black">
+    <div class="Container container bg-black">
+        <div class="navbar-container">
+        <div class="nav2">
+            <h2>Porimoni</h2>
+            <div class="icon-menu">
+               <button onclick="MyMenu()"><i class="fa-solid fa-bars"></i></button> 
+            </div>
+                <ul class="menu" id="menu">
+                   <li><a href="#" class="color">Home</a></li> 
+                   <li><a href="#">About</a></li> 
+                   <li><a href="#">Services</a></li> 
+                   <li><a href="#">Portfolio</a></li> 
+                    <li><a href="">Resume</a></li>
+                  <li><a href="">Blog</a></li>
+                   <li><a href="#">Contact</a></li> 
+                </ul>                        
+          </div>
+        </div>
+        <main  class="w-screen">
+            <div class="desc flex mt-32 lg:flex-row lg:mt-[7rem] lg:ml-28" id="1">
+                <div class="desc1 mt-10 mr-0 lg:mt-20" data-aos="fade-up">
+                    <h2 class="text-white text-5xl font-semibold">Hello!</h2>
+                    <h1 class="text-white text-4xl font-bold pt-2 ">I Am<span class="element  font-bold pl-1"></span></h1>
+                <h5 class="text-white text-lg w-full md:w-96 h-28 pt-3">
+                    I'm a Web Developer with extensive experience for over 5 years. My expertise is to create and Websites design, graphic design and many more...
+                </h5>
+                <div class="text-white pt-6 btn-profile">
+                    <button class="pl-7 pr-7 pt-3 pb-3 rounded-full border-2 border-pink-600 hover:bg-pink-600"><a href="#">View Work</a></button>
+                    <button class="ml-5 pl-9 pr-9 pt-3 pb-3 rounded-full border-2 border-pink-600 hover:bg-pink-600"><a href="#">Hire Me</a></button>
+                </div>
+                </div>
+                <div class="desc2 lg:absolute lg:top-20 lg:ml-14  ">
+                    <img src="./image/Home.png" alt="Home" class="lg:w-3/5 lg:ml-96" data-aos="fade-down">
+                </div>
+           </div>
+           <div class="section-2 flex lg:flex-row mt-[18rem] pr-10"  id="2">
+               <img src="./image/about.jpg" alt="About" data-aos="fade-right" class="rounded-xl ml-10">
+               <div class="desc3 text-white pl-2 w-full mt-20" data-aos="fade-left">
+                   <h2 class="text-5xl font-semibold">Hello, <span  class="text-pink-500">I Am Pori Moni</span></h2>
+                   <h4 class="text-lg pb-3 pt-3 lg:pr-40 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quibusdam ipsa consequuntur totam debitis, sapiente minus impedit vel ab dolorum quod eum inventore labore fugit enim tenetur qui facere rem.</h4>
+                   <h3 class="text-md pr-5 font-semibold pb-3">Name <span class="pl-24 font-normal">:  Pori Moni</span></h3>
+                   <h3 class="text-md pr-5 font-semibold pb-3">Age <span class="pl-28 font-normal">:  28</span></h3>
+                   <h3 class="text-md pr-5 font-semibold pb-3">Address <span class="pl-20 font-normal">:  Longdon,england</span></h3>
+                   <h3 class="text-md pr-5 font-semibold pb-3">Phone Number <span class="pl-7 font-normal">:  +00 820-885-3321</span></h3>
+                   <h3 class="text-md pr-5 font-semibold pb-3">Email <span class="pl-24 font-normal">:  Example@gmail.com</span></h3>
+                   <button class="pt-2"><a href="#"  class="text-white border-2 border-pink-600 p-3 pl-8 pr-8 hover:bg-pink-600 rounded-full ml-5">download CV</a></button>
+               </div>
+            </div>
+           <div class="services text-white"  id="3">
+            <div class="section-3">
+            <div class="flex flex-col  justify-center items-center">
+                <h1 class="text-5xl font-bold mt-28">My <span class="text-pink-600" data-aos="fade-up-right">Services</span></h1>
+                <h4 class="text-center  mt-10 w-[60%]" data-aos="fade-up-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis commodi, corporis ut facilis explicabo reprehenderit quisquam laudantium provident consectetur quibusdam.</h4>
+            </div>
+            <div class="section-card">
+                   <div class="t2 text-center m-10 p-[1.5rem] border-2 border-white hover:pb-10" data-aos="fade-right">
+                    <i class="fa-brands fa-html5 text-2xl bg-pink-600 pt-1 pb-1 pl-3 pr-3 rounded-full"></i>
+                    <h3 class="text-2xl font-semibold">Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis accusantium vitae cumque dignissimos illum ex hic?</p>
+                   </div>
+
+                   <div class="t2  text-center m-10 p-[1.5rem] border-2 border-white" data-aos="fade-up">
+                    <i class="fa-brands fa-facebook text-2xl bg-pink-600 pt-1 pb-1 pl-3 pr-3 rounded-full"></i>
+                    <h3 class="text-2xl font-semibold">Social Media</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis accusantium vitae cumque dignissimos illum ex hic?</p>
+                   </div>
+
+                   <div class="t2 text-center m-10 p-[1.5rem] border-2 border-white" data-aos="fade-left">
+                    <i class="fa-solid fa-video text-2xl bg-pink-600 pt-1 pb-1 pl-3 pr-3 rounded-full"></i>
+                    <h3 class="text-2xl font-semibold">Video Editing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis accusantium vitae cumque dignissimos illum ex hic?</p>
+                   </div>
+
+                <div class="t2  text-center m-10 p-[1.5rem] border-2 border-white" data-aos="fade-left">
+                    <i class="fa-solid fa-briefcase text-2xl bg-pink-600 pt-1 pb-1 pl-3 pr-3 rounded-full"></i>
+                    <h3 class="text-2xl font-semibold">Video Editing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis accusantium vitae cumque dignissimos illum ex hic?</p>
+                </div>
+
+                <div class="t2  text-center m-10 p-[1.5rem] border-2 border-white" data-aos="fade-down">
+                    <i class="fa-solid fa-code text-2xl bg-pink-600 pt-1 pb-1 pl-3 pr-3 rounded-full"></i>
+                    <h3 class="text-2xl font-semibold">Clean Code</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis accusantium vitae cumque dignissimos illum ex hic?</p>
+                </div>
+
+                <div class="t2  text-center m-10 p-[1.5rem] border-2 border-white" data-aos="fade-right">
+                    <i class="fa fa-support fa-lg text-2xl bg-pink-600 pt-1 pb-1 pl-3 pr-3 rounded-full"></i>
+                    <h3 class="text-2xl font-semibold">Fast Support</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis accusantium vitae cumque dignissimos illum ex hic?</p>
+                </div>
+
+
+
+            </div>
+
+            </div>
+           </div>
+           <!-- <div class="parallax" data-parallax="scroll" data-z-index="1"data-image-src="./image/alarm-clock-2116007.jpg">
+            <div class="z-20">
+                <h3 class="font-semibold text-4xl text-black pb-10 pt-28">I Am Available for Freelancer!</h3>
+               <button class=" pl-9 pr-9 pt-3 pb-3 rounded-full border-2 border-pink-600 hover:bg-pink-600"><a href="#">Hire Me</a></button>
+            </div>
+           </div> -->
+           <div class="section-4">
+           <div class="fixed-bg bg-1 parent-vcenter">
+            <div class="child-vcenter">
+                <div class="back-par1 text-center h-[30%] z-10">
+                    <div class="z-20">
+                        <h3 class="font-semibold text-4xl text-black pb-10 pt-28">I Am Available for Freelancer!</h3>
+                       <button class="mb-20 font-semibold pl-9 pr-9 pt-3 pb-3 rounded-full border-2 border-pink-600 hover:bg-pink-600 hover:text-black"><a href="#">Hire Me</a></button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+           <div class="portfolio section-5 mt-32" data-aos="fade-down" id="4">
+            <div class="flex flex-col justify-center items-center">
+            <h1 class="text-5xl font-bold text-center text-white" data-aos="fade-up">My <span class="text-pink-600">Portfolio</span></h1>
+            <p class="text-center text-white pt-6 w-[96%] md:w-[50%] ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto deleniti unde eveniet adipisci perferendis sapiente itaque dolor atque cum aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, veritatis. Voluptas amet excepturi voluptates, ducimus velit quibusdam repellat doloremque sapiente?</p>
+        </div>
+            <div class="photo-gallery">
+                <div class="btn-scroll">
+                <ul class="tombol-pills nav nav-pills mt-[6rem] mb-10 justify-center" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                      <a class=" bg-black text-white border-2 border-pink-600 pt-3 pb-3 pl-5 pr-5 rounded-full" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">All</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="bg-black text-white border-2 border-pink-600 pt-3 pb-3 pl-5 pr-5 rounded-full" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Design</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="bg-black text-white border-2 border-pink-600 pt-3 pb-3 pl-5 pr-5 rounded-full" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Wordpress</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="bg-black text-white border-2 border-pink-600 pt-3 pb-3 pl-5 pr-5 rounded-full" id="pills-contact-tab" data-toggle="pill" href="#pills-contact2" role="tab" aria-controls="pills-contact2" aria-selected="false">Branding</a>
+                      </li>
+                  </ul>
+                </div>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active mr-14" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="section-card2">
+                        <div class="area" data-aos="fade-left">
+                            <div class="img-area">
+                            <a href="./image/gallery/1.jpg" data-lightbox="myGallery" class="text-black">
+                                <img src="./image/gallery/1.jpg" alt="">
+                                <div class="img-text">
+                                    <h3>Picture 1</h3>
+                                    <h5>Hallo</h5>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="area pic family" data-aos="fade-down">
+                            <div class="img-area">
+                                <a href="./image/gallery/2.jpg" data-lightbox="myGallery" class="text-black">
+                                <img src="./image/gallery/2.jpg" alt="">
+                                <div class="img-text">
+                                    <h3>Picture 1</h3>
+                                    <h5>Hallo</h5>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class=" area pic child" data-aos="fade-right">
+                            <div class="img-area" >
+                                <a href="./image/gallery/3.jpg" data-lightbox="myGallery" class="text-black">
+                                <img src="./image/gallery/3.jpg" alt="">
+                                <div class="img-text">
+                                    <h3>Picture 1</h3>
+                                    <h5>Hallo</h5>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="area pic place" data-aos="fade-right">
+                            <div class="img-area">
+                                <a href="./image/gallery/4.jpg" data-lightbox="myGallery" class="text-black">
+                                <img src="./image/gallery/4.jpg" alt="">
+                                <div class="img-text">
+                                    <h3>Picture 1</h3>
+                                    <h5>Hallo</h5>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="area pic family" data-aos="fade-up">
+                            <div class="img-area">
+                                <a href="./image/gallery/5.jpg" data-lightbox="myGallery" class="text-black">
+                                <img src="./image/gallery/5.jpg" alt="">
+                                <div class="img-text">
+                                    <h3>Picture 1</h3>
+                                    <h5>Hallo</h5>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class=" area pic child" data-aos="fade-right">
+                            <div class="img-area">
+                                <a href="./image/gallery/6.jpg" data-lightbox="myGallery" class="text-black">
+                                <img src="./image/gallery/6.jpg" alt="">
+                                <div class="img-text">
+                                    <h3>Picture 1</h3>
+                                    <h5>Hallo</h5>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="section-card3">
+                        <div class=" area pic place" data-aos="fade-right">
+                            <div class="img-area">
+                                <a href="./image/gallery/4.jpg" data-lightbox="myGallery" class="text-black">
+                                <img src="./image/gallery/4.jpg" alt="">
+                                <div class="img-text">
+                                    <h3>Picture 1</h3>
+                                    <h5>Hallo</h5>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class=" area pic family" data-aos="fade-up">
+                            <div class="img-area">
+                                <a href="./image/gallery/5.jpg" data-lightbox="myGallery" class="text-black">
+                                <img src="./image/gallery/5.jpg" alt="">
+                                <div class="img-text">
+                                    <h3>Picture 1</h3>
+                                    <h5>Hallo</h5>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="section-card4">
+                        <div class=" area" data-aos="fade-left">
+                            <div class="img-area">
+                            <a href="./image/gallery/1.jpg" data-lightbox="myGallery" class="text-black">
+                                <img src="./image/gallery/1.jpg" alt="">
+                                <div class="img-text">
+                                    <h3>Picture 1</h3>
+                                    <h5>Hallo</h5>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class=" area pic family" data-aos="fade-down">
+                            <div class="img-area">
+                                <a href="./image/gallery/2.jpg" data-lightbox="myGallery" class="text-black">
+                                <img src="./image/gallery/2.jpg" alt="">
+                                <div class="img-text">
+                                    <h3>Picture 1</h3>
+                                    <h5>Hallo</h5>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class=" area pic child" data-aos="fade-right">
+                            <div class="img-area">
+                                <a href="./image/gallery/6.jpg" data-lightbox="myGallery" class="text-black">
+                                <img src="./image/gallery/6.jpg" alt="">
+                                <div class="img-text">
+                                    <h3>Picture 1</h3>
+                                    <h5>Hallo</h5>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="col-md-4 col-sm-6 area pic child" data-aos="fade-right">
+                            <div class="img-area" >
+                                <a href="./image/gallery/3.jpg" data-lightbox="myGallery" class="text-black">
+                                <img src="./image/gallery/3.jpg" alt="">
+                                <div class="img-text">
+                                    <h3>Picture 1</h3>
+                                    <h5>Hallo</h5>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+           </div>
+           <div class="number mr-10"  id="5">
+           <div class="section-6 mt-14">
+           <div class="fixed-bg-2 bg-2 parent-vcenter-2">
+            <div class="child-vcenter-2">
+                <div class="row section-back text-center relative " style="background-color:rgba(2, 2, 2, 0.521);">
+                    <div class=" section-number md:w-[77%] lg:w-[68%] lg:mt-5 lg:mb-5 lg:justify-evenly lg:items-center pl-[10.5rem] md:pl-10 pr-10 pt-2">
+                    <div class="client">
+                        <h1 class="text-white text-xl lg:text-2xl lg:text-semibold text-bold">Successul Projects</h1>
+                        <span class="counter  text-5xl text-pink-800 ">75</span>
+                       </div>
+                       <div class="client1">
+                        <h1 class="text-white text-xl lg:text-2xl lg:text-semibold">Happy Clients</h1>
+                        <span class="counter  text-5xl text-pink-800 ">840</span>
+                       </div>
+                       <div class="client2">
+                        <h1 class="text-white text-xl lg:text-2xl lg:text-semibold">Awards Received</h1>
+                        <span class="counter text-5xl text-pink-800 ">65</span>
+                       </div>
+                       <div class="client3">
+                        <h1 class="text-white text-xl lg:text-2xl lg:text-semibold">Customer</h1>
+                        <span class="counter text-5xl text-pink-800 ">350</span>
+                       </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-7">
+           <div class="flex flex-col lg:flex-row">
+            
+            <div class="timeline-area">
+                  <div class="parent" data-aos="fade-right">
+                      <section>
+                            <i class="icon fa-solid fa-briefcase"></i>
+                            <div class="child">
+                                <h3 class="text-xl text-bold">Medical science</h3>
+                                <h3 class="text-pink-500 text-xl">2001 - 2006</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque perferendis laboriosam laudantium, error veritatis dicta suscipit eligendi nam blanditiis obcaecati tempora accusantium reprehenderit sapiente numquam delectus deserunt ad maxime repellendus.</p>
+                           </div> 
+                        </section>                     
+                        <section class="">
+                            <i class="icon fa-solid fa-briefcase"></i>
+                            <div class="child">
+                                <h3 class="text-xl text-bold">Medical science</h3>
+                                <h3 class="text-pink-500 text-xl">2011 - 2015</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque perferendis laboriosam laudantium, error veritatis dicta suscipit eligendi nam blanditiis obcaecati tempora accusantium reprehenderit sapiente numquam delectus deserunt ad maxime repellendus.</p>
+                            </div>
+                        </section>
+                        <section class="">
+                            <i class="icon fa-solid fa-briefcase"></i>
+                            <div class="child">
+                                <h3 class="text-xl text-bold">Medical science</h3>
+                                <h3 class="text-pink-500 text-xl">2015 - 2016</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque perferendis laboriosam laudantium, error veritatis dicta suscipit eligendi nam blanditiis obcaecati tempora accusantium reprehenderit sapiente numquam delectus deserunt ad maxime repellendus.</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                    <div class="timeline-area1">
+                        <div class="parent" data-aos="fade-left">
+                            <section class="">
+                                <i class="icon fa-solid fa-briefcase"></i>
+                                <div class="child">
+                                    <h3 class="text-xl text-bold">Medical science</h3>
+                                    <h3 class="text-pink-500 text-xl">2001 - 2006</h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque perferendis laboriosam laudantium, error veritatis dicta suscipit eligendi nam blanditiis obcaecati tempora accusantium reprehenderit sapiente numquam delectus deserunt ad maxime repellendus.</p>
+                                </div>
+                            </section>
+                            <section class="">
+                                <i class="icon fa-solid fa-briefcase"></i>
+                                <div class="child">
+                                    <h3 class="text-xl text-bold">Medical science</h3>
+                                    <h3 class="text-pink-500 text-xl">2011 - 2015</h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque perferendis laboriosam laudantium, error veritatis dicta suscipit eligendi nam blanditiis obcaecati tempora accusantium reprehenderit sapiente numquam delectus deserunt ad maxime repellendus.</p>
+                                </div>
+                            </section>
+                            <section class="">
+                                <i class="icon fa-solid fa-briefcase"></i>
+                                <div class="child">
+                                    <h3 class="text-xl text-bold">Medical science</h3>
+                                    <h3 class="text-pink-500 text-xl">2015 - 2016</h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque perferendis laboriosam laudantium, error veritatis dicta suscipit eligendi nam blanditiis obcaecati tempora accusantium reprehenderit sapiente numquam delectus deserunt ad maxime repellendus.</p>
+                                </div>
+                            </section>
+                        </div>
+                </div> 
+            </div>  
+            </div>
+            <div class="section-8">
+            <div class="blog bg-black" id="6">
+                <div class="flex justify-center flex-col items-center">
+                    <h1 class="text-5xl font-bold  text-white w-96 pl-24" data-aos="fade-up">My <span class="text-pink-600">Blog</span></h1>
+                    <p class="text-lg text-white text-center pt-8 pb-10 w-[90%] md:w-2/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod exercitationem laboriosam assumenda, harum distinctio ab omnis adipisci, ratione recusandae voluptas vel blanditiis reprehenderit fuga aperiam enim magnam porro quaerat nisi!</p>
+                </div>
+                <div class="card grid grid-cols-1 lg:grid-cols-3 gap-3 md:grid-cols-2 md:w-[103%] bg-transparent">
+                    <div class="card1 shadow-inner shadow-md shadow-white    mb-10"  data-aos="fade-right">                   
+                        <div class="zoom"> 
+                        <img src="./image/Blog/1 (1).jpg" alt="" class="lg:w-full block duration-700">
+                    </div>
+                        <div class="desc pl-5 pt-2">
+                            <h3 class="text-pink-600 font-bold"><i class="fa-solid fa-clock"></i> july 31,2022 <span class="text-white">| design</span></h3>
+                            <h1 class="font-bold text-2xl text-white pt-3">How To Improved Design</h1>
+                            <h3 class="text-white pt-4 pb-4 pr-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, necessitatibus nesciunt, adipisci laboriosam maxime iure maiores nulla voluptatibus officia voluptatum a, fuga ea. Numquam sit, debitis sunt cum provident inventore?</h3>
+                            <button class="border-2 border-pink-600 rounded-full text-white p-2 pl-3 pr-3 mb-10 hover:bg-pink-600 duration-700">
+                                <a href="">Read More</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card1 bg-black shadow-inner shadow-md shadow-white    mb-10" data-aos="fade-down">
+                        <div class="zoom">
+                            <img src="./image/Blog/2 (1).jpg" alt="" class="lg:w-full">
+                        </div>
+                        <div class="desc pl-5 pt-2">
+                            <h3 class="text-pink-600 font-bold"><i class="fa-solid fa-clock"></i> july 31,2022 <span class="text-white">| design</span></h3>
+                            <h1 class="font-bold text-2xl text-white pt-3">How To Improved Design</h1>
+                            <h3 class="text-white pt-4 pb-4 pr-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, necessitatibus nesciunt, adipisci laboriosam maxime iure maiores nulla voluptatibus officia voluptatum a, fuga ea. Numquam sit, debitis sunt cum provident inventore?</h3>
+                            <button class="border-2 border-pink-600 rounded-full text-white p-2 pl-3 pr-3 mb-10 hover:bg-pink-600 duration-700">
+                                <a href="">Read More</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card1 bg-black shadow-inner shadow-md shadow-white    mb-10" data-aos="fade-left">
+                        <div class="zoom">
+                            <img src="./image/Blog/3 (1).jpg" alt="" class="lg:w-full">
+                        </div>
+                        <div class="desc pl-5 pt-2">
+                            <h3 class="text-pink-600 font-bold"><i class="fa-solid fa-clock"></i> july 31,2022 <span class="text-white">| design</span></h3>
+                            <h1 class="font-bold text-2xl text-white pt-3">How To Improved Design</h1>
+                            <h3 class="text-white pt-4 pb-4 pr-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, necessitatibus nesciunt, adipisci laboriosam maxime iure maiores nulla voluptatibus officia voluptatum a, fuga ea. Numquam sit, debitis sunt cum provident inventore?</h3>
+                            <button class="border-2 border-pink-600 rounded-full text-white p-2 pl-3 pr-3 mb-10 hover:bg-pink-600 duration-700">
+                                <a href="">Read More</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-9">
+            <div class="contact bg-transparent mt-20" id="7">
+                <h1 class="text-5xl font-bold text-center text-white mr-10" data-aos="fade-right">Contact<span class="text-pink-600">Us</span></h1>
+                <h2 class="text-white text-center text-lg" data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis odio accusamus consequuntur, voluptas totam veniam iusto facere quis quae non animi amet reprehenderit eaque modi vitae itaque rerum provident corporis.</h2>
+                <div class="kolom mt-10">
+                    <form action="">
+                        <input type="text" class="z-10">
+                    <textarea type="text" class="bg-transparent border-2 border-white w-full text-lg text-gray-300 mt-4 h-32" placeholder="your Massege" data-aos="fade-up"></textarea>
+                    </form>
+                </div>
+                <div class="btn flex items-center justify-center">
+                    <button class="border-2 border-pink-600 rounded-full text-white mt-10 hover:bg-pink-600 duration-700">
+                        <a href="" class="pt-14 pb-14 pl-14 pr-14">send Me</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="play text-center mt-8 text-white">
+            <div class="note text-xl text-bold">
+                <p class="">just enjoy the game!</p>
+            </div>
+            <div class="mt-4">
+            <button class="text-md text-black font-bold bg-white rounded-md p-3"><a href="./game.html">Play Game</a></button>
+        </div>
+        </div>
+        </main>
+
+        <footer class="bg-black">
+            <div class="footer bg-black  h-20 mt-10">
+                <h2 class="text-lg flex text-white items-center justify-center pt-10">Copyright © 2022 Pori Moni | All Rights Reserved</h2>
+            </div>
+        </footer>
+    </div>  
+</body>
+<script>
+function MyMenu(){
+  var x = document.getElementById("menu");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+       <script>
+        var typed = new Typed('.element', {
+          strings: [
+              
+          'Pori Moni', 
+          'Web Designer',
+          'Photographer'
+          ],
+          typeSpeed: 50, // Default value
+          backSpeed: 50,
+          loop: true,
+          });
+    </script>
+      <script>
+        AOS.init();
+      </script>
+<style>
+input{
+
+    display: none;
+}
+
+
+#check1:checked ~ .portfolio .photo-gallery .pic{
+
+    opacity: 1;
+    transform:scale(1);
+    position: relative;   
+}
+
+#check2:checked ~ .portfolio .photo-gallery .family{
+
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+
+
+#check2:checked ~ .portfolio .photo-gallery .child,
+#check2:checked ~ .portfolio .photo-gallery .place{
+
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
+</style>
+
+<script>
+ $(document).ready(function(){
+                     $(window).scroll(function(){
+                           $val = $(window).scrollTop();
+                           if($val > 10){
+                                 $('.container .nav2').addClass('active');
+                           }else{
+                              $('.container .nav2').removeClass('active');  
+                           }
+                     })
+
+                     $('.container .nav2 h1').click(function(){
+                       $('.container .nav2 ul.menu').toggleClass('display');
+                     })
+                })
+</script>
+</html>
